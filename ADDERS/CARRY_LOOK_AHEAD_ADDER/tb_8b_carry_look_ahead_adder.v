@@ -5,7 +5,7 @@ module tb_8b_carry_look_ahead_adder();
   reg  [7:0] a;
   reg  [7:0] b;
   reg        cin;
-  wire [7:0] s;
+  wire [7:0] sum;
   wire       cout;
   
   cla_adder_8 uut (
@@ -13,12 +13,12 @@ module tb_8b_carry_look_ahead_adder();
     .b(b),
     .cin(cin),
     .cout(cout),
-    .s(s)
+    .sum(sum)
   );
   
   initial begin
     $dumpfile("carry_select_adder_tb.vcd");
-    $dumpvars(0, tb_8b_carry_select_adder);
+    $dumpvars(0, uut);
     
     a   = 8'd0;
     b   = 8'd0;
