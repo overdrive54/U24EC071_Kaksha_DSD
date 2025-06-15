@@ -6,7 +6,7 @@ module full_adder_behavioral(input a, input b, input cin, output reg cout, outpu
 
 endmodule
 
-module b4_full_adder_structural(input [3:0] a, input [3:0] b, input cin, output reg cout, output reg [3:0] sum);
+module b4_full_adder_structural(input [3:0] a, input [3:0] b, input cin, output cout, output [3:0] sum);
 
     wire c1, c2, c3; 
 
