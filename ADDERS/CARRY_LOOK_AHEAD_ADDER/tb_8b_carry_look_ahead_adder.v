@@ -8,7 +8,7 @@ module tb_8b_carry_look_ahead_adder();
   wire [7:0] s;
   wire       cout;
   
-  carry_select_8b_adder uut (
+  cla_adder_8 uut (
     .a(a),
     .b(b),
     .cin(cin),
