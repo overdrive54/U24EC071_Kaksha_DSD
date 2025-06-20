@@ -8,7 +8,8 @@ schematic
 
 
 16x16 array multiplier
-![image](https://github.com/user-attachments/assets/b6a4c3ab-6eb6-426f-91ad-e85623f9a8eb)
+![image](https://github.com/user-attachments/assets/f3367eb9-860a-462b-ba34-fb25c5916446)
 waveform
-[schematic.pdf](https://github.com/user-attachments/files/20753233/schematic.pdf)
+[schematic.pdf](https://github.com/user-attachments/files/20833862/schematic.pdf)
+
 schematic
