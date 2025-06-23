@@ -10,5 +10,5 @@ schematic
 down
 ![image](https://github.com/user-attachments/assets/83173f4e-c377-45af-8c01-b39fb5fbaf94)
 waveform
-![image](https://github.com/user-attachments/assets/a169fa2c-02a5-47ac-98e7-39f741c69ad8)
+![image](https://github.com/user-attachments/assets/7084f86b-7557-456e-be5b-9183ecb6bb47)
 schematic
