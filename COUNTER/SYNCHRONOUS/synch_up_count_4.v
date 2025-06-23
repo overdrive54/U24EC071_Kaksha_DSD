@@ -17,7 +17,7 @@ assign qbar = ~q;
 
 endmodule
 
-module synch_down_count_4(
+module synch_up_count_4(
 input clk,
 output [3 : 0] q,
 output [3 : 0] qbar
