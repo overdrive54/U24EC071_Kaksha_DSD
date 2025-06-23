@@ -1,12 +1,12 @@
 `timescale 1ns / 1ps
 
-module synch_down_count_4_tb;
+module synch_up_count_4_tb;
 
     reg clk;
     wire [3:0] q;
     wire [3:0] qbar;
 
-    synch_down_count_4 uut (
+    synch_up_count_4 uut (
         .clk(clk),
         .q(q),
         .qbar(qbar)
