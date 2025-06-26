@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module Barrel_shift(
+module Barrel_shift_L(
 input [4:0] shift_amnt,
 input [31:0] shift_str,
 output [31:0] shifted_str
