@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module synch_fifo #(
+module synch_fifo_32x8 #(
     parameter fifo_w = 32,
     parameter fifo_d = 8
 )(
