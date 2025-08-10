@@ -66,7 +66,7 @@ module tb_AXI_STREAM;
 
         #10;
 
-        repeat (5) begin
+        repeat (10) begin
             @(posedge aclk);
             info_bits   = $random;
             dsp_in_data = $random;
