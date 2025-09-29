@@ -24,10 +24,46 @@ module full_adder_4b_behavioral (
     end
 endmodule
 
+module carry_select_8b_adder_ff (
+    input        clk,
+    input  [7:0] a_in,
+    input  [7:0] b_in,
+    input        cin_in,
+    output reg [7:0] s_out,
+    output reg   cout_out
+);
+
+    reg [7:0] a_reg, b_reg;
+    reg       cin_reg;
+
+    always @(posedge clk) begin
+        a_reg  <= a_in;
+        b_reg  <= b_in;
+        cin_reg <= cin_in;
+    end
+
+    wire [7:0] sum_comb;
+    wire       cout_comb;
+
+    carry_select_8b_adder u_adder (
+        .a(a_reg),
+        .b(b_reg),
+        .cin(cin_reg),
+        .s(sum_comb),
+        .cout(cout_comb)
+    );
+
+    always @(posedge clk) begin
+        s_out   <= sum_comb;
+        cout_out <= cout_comb;
+    end
+
+endmodule
+
 module carry_select_8b_adder (
-    input  [7:0] a,
-    input  [7:0] b,
-    input  cin,
+    input [7:0] a,
+    input [7:0] b,
+    input cin,
     output cout,
     output [7:0] s
 );
